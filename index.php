@@ -1,226 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Shop Homepage - Start Bootstrap Template</title>
-<?php 
-require_once ('includes/header.php');
-?>
-        <!-- Hero Banner-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <?php
+    require_once('includes/header.php');
+    ?>
+    <!-- Hero Banner-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Shop in style</h1>
+                <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
             </div>
-        </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        </div>
+    </header>
+    <!-- Round Circle Image Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <div class="h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top rounded-circle"
+                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
+                                    <h5 class="fw-bolder">Succulents & Cacti</h5>
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <!-- TODO add link to product page with php filter here -->
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                        href="products.php">View More</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <?php 
-require_once ('includes/footer.php');
-?>
+                <div class="col mb-5">
+                    <div class="h-100">
+
+                        <!-- Product image-->
+                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Climbing & Vining</h5>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <!-- TODO add link to product page with php filter here -->
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Flowering</h5>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <!-- TODO add link to product page with php filter here -->
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Collectors Plants</h5>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <!-- TODO add link to product page with php filter here -->
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <h2 class="text-center" style="width: 18rem;">Shop By Care:</h2>
+                                    <div class="card text-center" style="width: 18rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 1</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Easy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 2</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Moderate</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 3</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Advanced</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <h2 class="text-center" style="width: 18rem;">Shop By Size:</h2>
+                                    <div class="card text-center" style="width: 18rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 1</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Small</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 2</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Medium</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 3</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Large</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <h2 class="text-center" style="width: 18rem;">Shop By Light:</h2>
+                                    <div class="card text-center" style="width: 18rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 1</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Low Light</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 2</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Indirect Light</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card 3</h5>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Direct Light</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </section>
+    <?php
+    require_once('includes/footer.php');
+    ?>
