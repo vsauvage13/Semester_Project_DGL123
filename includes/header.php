@@ -32,6 +32,7 @@
                     </ul>
                 </li>
             </ul>
+            <!-- TODO make this search bar - search a library using php? -->
             <form class="d-flex">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
@@ -39,7 +40,7 @@
                 </div>
             </form>
             <ul class="navbar-nav ms-auto"> <!-- Move Login link to the right -->
-                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Admin</a></li>
             </ul>
             <button class="btn btn-outline-dark" type="submit" formaction="cart.php">
                 <i class="bi-cart-fill me-1"></i>
