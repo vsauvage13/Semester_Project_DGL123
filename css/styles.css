@@ -10,6 +10,24 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/* Template 3 style */
+#template-bg-3 {
+	background-image: url('../../images/template-bg-3.jpg');
+}
+
+
+/* Template 3 media queries */
+@media screen and (min-width:768px) and (max-width: 980px) {
+	.card {
+		width: 50% !important;
+		display: initial;
+	}
+}
+
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
