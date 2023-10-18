@@ -33,6 +33,7 @@
                 </li>
             </ul>
             <!-- TODO make this search bar - search a library using php? -->
+            <!-- TODO have search function bring up suggestions? -->
             <form class="d-flex">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
@@ -44,7 +45,7 @@
             </ul>
             <button class="btn btn-outline-dark" type="submit" formaction="cart.php">
                 <i class="bi-cart-fill me-1"></i>
-                Cart
+                <a class="nav-link" href="cart.php">Cart</a>
                 <!-- TODO Below make the number update to the cart number using PHP -->
                 <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
             </button>
