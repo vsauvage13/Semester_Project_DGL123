@@ -8,13 +8,12 @@
             <div class="col-md-4 col-sm-12 text-center ">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                      <!-- TODO try and get links to not have underlines in regular times just in hover -->
                     <li><a class="link-light" href="index.php">Home</a></li>
                     <li><a class="link-light" href="about.php">About</a></li>
                     <li><a class="link-light" href="products.php">All Products</a></li>
-                         <!-- TODO Link the below pages to a filter on the products page - implement php here -->
+                    <!-- TODO Link the below pages to a filter on the products page - implement php here -->
                     <li><a class="link-light" href="products.php">Popular Items</a></li>
-                      <!-- TODO Link the below pages to a filter on the products page - implement php here -->
+                    <!-- TODO Link the below pages to a filter on the products page - implement php here -->
                     <li><a class="link-light" href="products.php">New Arrivals</a></li>
                     <li><a class="link-light" href="login.php">Admin Login</a></li>
                 </ul>
