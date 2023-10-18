@@ -33,7 +33,8 @@ require_once ('includes/header.php');
             </div>
         <div class="card-footer p-3">
             <div class="d-flex justify-content-center">
-                <div class="text-primary">Not a member? Sign up here!</div>
+                <!-- TODO have sign up page get hyperlinked -->
+                <div class="text-primary">Don't have an account? Make one here!</div>
             </div>
         </div>
     </div>
