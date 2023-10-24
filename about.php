@@ -26,6 +26,7 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
                             mind.</span></h2>
+                    <h2 class="featurette-heading">How It Started <span class="text-muted">It all came from a small town dream.</span></h2>
                     <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
                         prose here.</p>
                 </div>
