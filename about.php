@@ -24,8 +24,6 @@
             <!-- START THE FEATURETTES -->
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
                     <h2 class="featurette-heading">How It Started <span class="text-muted">It all came from a small town dream.</span></h2>
                     <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
                         prose here.</p>
@@ -43,8 +41,6 @@
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                            yourself.</span></h2>
                     <h2 class="featurette-heading">Then the Big Idea. <span class="text-muted">It was a huge leap but we did it.</span></h2>
                     <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
                         how this layout would work with some actual real-world content in place.</p>
@@ -62,7 +58,7 @@
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                    <h2 class="featurette-heading">Dreams became a reality! <span class="text-muted">We are so grateful to be sharing the love of plants!</span></h2>
                     <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
                         really intended to be actually read, simply here to give you a better view of what this would
                         look like with some actual content. Your content.</p>
