@@ -1,0 +1,101 @@
+Example Code for Admin Sessions could iclude code such as this: 
+
+Admin Sessions:
+
+Start: The beginning of the admin session.
+
+session_start(); // Initiating a session
+Admin Login:
+Admins log in to access the admin panel.
+Upon successful authentication, an admin session is created, indicating that they are logged in as an admin.
+An error is displayed if they are not an active admin or if they enter the wrong information.
+
+
+if (adminIsAuthenticated()) {
+    // Successful login, create admin session
+    $_SESSION['admin_id'] = $admin_id; // Storing admin ID in the session
+} else {
+    // Display error message
+}
+Admin Actions:
+The admin session allows them to perform admin-specific actions in the admin panel.
+
+
+if (isset($_SESSION['admin_id'])) {
+    // Admin actions allowed
+} else {
+    // Redirect or show an error for unauthorized access
+}
+Access Plants Database:
+The admin accesses the plants database, which includes information about plants available for purchase.
+This includes plant names, types, prices, and stock quantities.
+Each plant is represented as a record in the Plants table.
+
+
+Copy code
+if (isset($_SESSION['admin_id'])) {
+    // Access the database to retrieve plant information
+} else {
+    // Show error for unauthorized access
+}
+Save Changes:
+The changes made by the admin are saved, and the database is updated.
+
+
+if (isset($_SESSION['admin_id'])) {
+    // Save changes to the database
+} else {
+    // Show error for unauthorized access
+}
+Admin Logout:
+When the admin logs out or the session expires, the admin session data is cleared, and they are no longer considered logged in as an admin.
+
+
+if (isset($_SESSION['admin_id'])) {
+    // Log out and clear admin session
+    session_unset();
+    session_destroy();
+}
+End: Indicates the end of the admin session.
+
+The same process for a Customer Session could look like: 
+
+Customer Sessions:
+
+Start: The beginning of the customer session when a customer visits the website.
+
+
+session_start(); // Initiating a session
+Initiate Session:
+A session is initiated for the customer.
+
+
+session_start(); // Initiating a customer session
+Shopping Cart:
+This session is used to store the contents of the customer's shopping cart as they browse and add items.
+
+
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array(); // Initialize an empty cart
+}
+Add Items to Cart:
+For each item added to the cart, the plant's details are stored in the session.
+This includes plant name, type, price, and desired purchase quantity.
+
+
+$product = array(
+    'name' => 'Plant Name',
+    'type' => 'Plant Type',
+    'price' => 19.99,
+    'quantity' => 1
+);
+
+array_push($_SESSION['cart'], $product); // Add the product to the cart
+Stock Availability:
+If the item is out of stock, the cart shows this information and does not allow the customer to purchase it.
+
+
+if ($product['quantity'] <= 0) {
+    // Show out-of-stock message
+}
+End: Indicates the end of the customer session.
