@@ -8,6 +8,7 @@ require_once ('includes/header.php');
     <div class="card mb-5 p-5  bg-dark bg-gradient text-white col-md-4">
         <div class="card-header text-center">
             <h3>Login</h3>
+            <!-- TODO have login check against available information stored in database - if none matches redirect to error page -->
         </div>
         <div class="card-body mt-3">
             <form name="login" action="" method="post">
@@ -21,6 +22,7 @@ require_once ('includes/header.php');
                         class="form-control text-center p-3"
                         placeholder="Password" name="password">
                 </div>
+                <!-- TODO login should redirect to backend Admin Page - page needs to be created -->
                 <div class="text-center">
                     <input type="submit" value="Login"
                         class="btn btn-primary mt-3 w-100 p-2"

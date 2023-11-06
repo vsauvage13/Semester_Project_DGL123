@@ -15,6 +15,7 @@ require_once('includes/header.php');
                   <div class="p-5">
                     <div class="d-flex justify-content-between align-items-center mb-5">
                       <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                      <!-- TODO make number of items in cart dynamic and update depending on stored customer session -->
                       <h6 class="mb-0 text-muted">3 items</h6>
                     </div>
                     <hr class="my-4">
@@ -33,7 +34,7 @@ require_once('includes/header.php');
                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                           <i class="fas fa-minus"></i>
                         </button>
-
+<!-- TODO Reference database for cart items that include number of items and item names -->
                         <input id="form1" min="0" name="quantity" value="1" type="number"
                           class="form-control form-control-sm" />
 
@@ -42,6 +43,7 @@ require_once('includes/header.php');
                           <i class="fas fa-plus"></i>
                         </button>
                       </div>
+                      <!-- TODO check for dynamic pricing in database - are there are discounts, sales, qty discounts -->
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                         <h6 class="mb-0">$ 44.00</h6>
                       </div>
@@ -56,7 +58,9 @@ require_once('includes/header.php');
                       <div class="col-md-2 col-lg-2 col-xl-2">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
                           class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          <!-- TODO update alt text -->
                       </div>
+                      <!-- TODO Reference database for cart items that include number of items and item names -->
                       <div class="col-md-3 col-lg-3 col-xl-3">
                         <h6 class="text-muted">Succulents & Cacti</h6>
                         <h6 class="text-black mb-0">Echeveria</h6>
@@ -75,6 +79,7 @@ require_once('includes/header.php');
                           <i class="fas fa-plus"></i>
                         </button>
                       </div>
+                       <!-- TODO check for dynamic pricing in database - are there are discounts, sales, qty discounts -->
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                         <h6 class="mb-0">$ 44.00</h6>
                       </div>
@@ -99,7 +104,7 @@ require_once('includes/header.php');
                           onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                           <i class="fas fa-minus"></i>
                         </button>
-
+<!-- TODO Reference database for cart items that include number of items and item names -->
                         <input id="form1" min="0" name="quantity" value="1" type="number"
                           class="form-control form-control-sm" />
 
@@ -108,6 +113,7 @@ require_once('includes/header.php');
                           <i class="fas fa-plus"></i>
                         </button>
                       </div>
+                       <!-- TODO check for dynamic pricing in database - are there are discounts, sales, qty discounts -->
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                         <h6 class="mb-0">$ 44.00</h6>
                       </div>
@@ -129,7 +135,7 @@ require_once('includes/header.php');
                   <div class="p-5">
                     <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
                     <hr class="my-4">
-
+<!-- TODO Cart pricing should be dynamic and relfect whats in cart database as well as cart qty -->
                     <div class="d-flex justify-content-between mb-4">
                       <h5 class="text-uppercase">items 3</h5>
                       <h5>$ 132.00</h5>
@@ -138,6 +144,7 @@ require_once('includes/header.php');
                     <h5 class="text-uppercase mb-3">Shipping</h5>
 
                     <div class="mb-4 pb-2">
+                      <!-- TODO have shipping options update price that is displayed -->
                       <select class="select">
                         <option value="1">Standard-Delivery- $5.00</option>
                         <option value="2">Two</option>
@@ -147,6 +154,7 @@ require_once('includes/header.php');
                     </div>
 
                     <h5 class="text-uppercase mb-3">Give code</h5>
+                    <!-- TODO use database to check for stored coupon codes, throwing error if nothing matches and adjusting cart pricing if it does -->
 
                     <div class="mb-5">
                       <div class="form-outline">
@@ -156,7 +164,7 @@ require_once('includes/header.php');
                     </div>
 
                     <hr class="my-4">
-
+<!-- TODO total price should be dynamic -->
                     <div class="d-flex justify-content-between mb-5">
                       <h5 class="text-uppercase">Total price</h5>
                       <h5>$ 137.00</h5>

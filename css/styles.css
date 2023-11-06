@@ -10,11 +10,21 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/* CSS for product page below */
+ .icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+
 
 /* Template CSS for placeholder Cart starts here https://mdbootstrap.com/docs/standard/extended/shopping-carts/ */
  @media (min-width: 1025px) {
   .h-custom {
-  height: 200vh !important;
+  height: 100vh !important;
   }
   }
   
