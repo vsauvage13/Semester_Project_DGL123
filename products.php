@@ -23,101 +23,37 @@ require_once('includes/header.php');
                     <div class="collapse card d-lg-block mb-5" id="navbarSupportedContent">
                         <div class="accordion">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" >
+                                <h2 class="accordion-header">
                                     <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" 
-                                        aria-expanded="true" >
+                                        data-mdb-toggle="collapse" aria-expanded="true">
                                         Plant Types
                                     </button>
                                 </h2>
-                                <div class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne">
+                                <div class="accordion-collapse collapse show" aria-labelledby="headingOne">
                                     <div class="accordion-body">
                                         <ul class="list-unstyled">
-                                            <li><a href="#" class="text-dark">Succulents</a></li>
-                                            <li><a href="#" class="text-dark">Cacti</a></li>
-                                            <li><a href="#" class="text-dark">Climbing</a></li>
-                                            <li><a href="#" class="text-dark">Vining</a></li>
-                                            <li><a href="#" class="text-dark">Flowering</a></li>
-                                            <li><a href="#" class="text-dark">Collectors</a></li>
+                                            <li><a href="products.php" class="text-dark">All</a></li>
+                                            <li><a href="?category=succulent" class="text-dark">Succulents</a></li>
+                                            <li><a href="?category=cacti" class="text-dark">Cacti</a></li>
+                                            <li><a href="?category=climbing" class="text-dark">Climbing</a></li>
+                                            <li><a href="?category=tall" class="text-dark">Tall</a></li>
+                                            <li><a href="?category=flowering" class="text-dark">Flowering</a></li>
+                                            <li><a href="?category=collectors" class="text-dark">Collectors</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" >
+                                <h2 class="accordion-header">
                                     <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" 
-                                        aria-expanded="true" >
-                                        Brands
-                                    </button>
-                                </h2>
-                                <div class="accordion-collapse collapse show"
-                                    aria-labelledby="headingTwo">
-                                    <div class="accordion-body">
-                                        <div>
-                                            <!-- TODO Items need to be replaced with plant ones on home page -->
-                                            <!-- TODO dropdown needs to be fixed -->
-                                            <!-- Checked checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    checked />
-                                                <label class="form-check-label" for="flexCheckChecked1">Mercedes</label>
-                                                <span class="badge badge-secondary float-end">120</span>
-                                            </div>
-                                            <!-- Checked checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                     checked />
-                                                <label class="form-check-label" >Toyota</label>
-                                                <span class="badge badge-secondary float-end">15</span>
-                                            </div>
-                                            <!-- Checked checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                  checked />
-                                                <label class="form-check-label"
-                                                    >Mitsubishi</label>
-                                                <span class="badge badge-secondary float-end">35</span>
-                                            </div>
-                                            <!-- Checked checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                   checked />
-                                                <label class="form-check-label" >Nissan</label>
-                                                <span class="badge badge-secondary float-end">89</span>
-                                            </div>
-                                            <!-- Default checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                   />
-                                                <label class="form-check-label" >Honda</label>
-                                                <span class="badge badge-secondary float-end">30</span>
-                                            </div>
-                                            <!-- Default checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    />
-                                                <label class="form-check-label">Suzuki</label>
-                                                <span class="badge badge-secondary float-end">30</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" >
-                                    <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" 
-                                        aria-expanded="false" >
+                                        data-mdb-toggle="collapse" aria-expanded="false">
                                         Price
                                     </button>
                                 </h2>
-                                <div class="accordion-collapse collapse show"
-                                    >
+                                <div class="accordion-collapse collapse show">
                                     <div class="accordion-body">
                                         <div class="range">
-                                            <input type="range" class="form-range"  />
+                                            <input type="range" class="form-range" />
                                         </div>
                                         <div class="row mb-3">
                                             <div class="col-6">
@@ -135,7 +71,7 @@ require_once('includes/header.php');
                                                 </p>
                                                 <div class="form-outline">
                                                     <input type="number" class="form-control" />
-                                                    <label class="form-label" >$1,0000</label>
+                                                    <label class="form-label">$1,0000</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -147,13 +83,11 @@ require_once('includes/header.php');
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" 
-                                        aria-expanded="false" >
+                                        data-mdb-toggle="collapse" aria-expanded="false">
                                         Size
                                     </button>
                                 </h2>
-                                <div class="accordion-collapse collapse show"
-                                   >
+                                <div class="accordion-collapse collapse show">
                                     <div class="accordion-body">
                                         <input type="checkbox" class="btn-check border justify-content-center"
                                             id="btn-check1" checked autocomplete="off" />
@@ -175,21 +109,18 @@ require_once('includes/header.php');
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" >
+                                <h2 class="accordion-header">
                                     <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" 
-                                        aria-expanded="false" >
+                                        data-mdb-toggle="collapse" aria-expanded="false">
                                         Ratings
                                     </button>
                                 </h2>
-                                <div class="accordion-collapse collapse show"
-                                  >
+                                <div class="accordion-collapse collapse show">
                                     <div class="accordion-body">
                                         <!-- Default checkbox -->
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                checked />
-                                            <label class="form-check-label" >
+                                            <input class="form-check-input" type="checkbox" value="" checked />
+                                            <label class="form-check-label">
                                                 <i class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
@@ -199,9 +130,8 @@ require_once('includes/header.php');
                                         </div>
                                         <!-- Default checkbox -->
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                              checked />
-                                            <label class="form-check-label" >
+                                            <input class="form-check-input" type="checkbox" value="" checked />
+                                            <label class="form-check-label">
                                                 <i class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
@@ -211,9 +141,8 @@ require_once('includes/header.php');
                                         </div>
                                         <!-- Default checkbox -->
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                 checked />
-                                            <label class="form-check-label" >
+                                            <input class="form-check-input" type="checkbox" value="" checked />
+                                            <label class="form-check-label">
                                                 <i class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
@@ -223,9 +152,8 @@ require_once('includes/header.php');
                                         </div>
                                         <!-- Default checkbox -->
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                               checked />
-                                            <label class="form-check-label" >
+                                            <input class="form-check-input" type="checkbox" value="" checked />
+                                            <label class="form-check-label">
                                                 <i class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-warning"></i><i
                                                     class="fas fa-star text-secondary"></i><i
@@ -243,7 +171,27 @@ require_once('includes/header.php');
                 <!-- content -->
                 <div class="col-lg-9">
                     <section class="d-sm-flex align-items-center border-bottom mb-4 pb-3">
-                        <strong class="d-block py-2">32 Items found</strong>
+                        <?php
+                        $sql = "SELECT COUNT(id) FROM inventory";
+                        if (isset($_GET['category'])) {
+                            $category = $_GET['category'];
+                            $sql .= " WHERE category='$category'";
+                        }
+                        $result = mysqli_query($conn, $sql);
+
+                        if ($result) {
+                            $row = mysqli_fetch_row($result);
+                            $count = $row[0];
+                        } else {
+                            $count = 0;
+                        }
+                        ?>
+
+                        <strong class="d-block py-2">
+                            <?php echo $count; ?> Items found
+                        </strong>
+
+
                         <div class="ms-auto">
                             <select class="form-select d-inline-block w-auto border pt-1">
                                 <option value="0">Best match</option>
@@ -263,51 +211,39 @@ require_once('includes/header.php');
                     </section>
 
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                            <div class="card w-100 my-2 shadow-2-strong">
-                                <img src="" class="card-img-top" />
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex flex-row">
-                                        <h5 class="mb-1 me-1">$34.50</h5>
-                                        <span class="text-danger"><s>$49.99</s></span>
-                                    </div>
-                                    <p class="card-text">Anthurium - Red & White Stripe</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                        <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                        <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i
-                                                class="fas fa-heart fa-lg text-secondary px-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                            <div class="card w-100 my-2 shadow-2-strong">
-                                <img src="" class="card-img-top" />
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$29.99</h5>
-                                    <p class="card-text">Echeveria - Fancy Variety</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                        <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                        <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i
-                                                class="fas fa-heart fa-lg text-secondary px-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                            <div class="card w-100 my-2 shadow-2-strong">
-                                <img src="" class="card-img-top" />
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$19.99</h5>
-                                    <p class="card-text">Pothos - Marble Queen</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                        <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                        <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i
-                                                class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+                        <?php
+                        $sql = "SELECT * FROM inventory";
+
+                        if (isset($_GET['category'])) {
+                            $category = $_GET['category'];
+                            $sql .= " WHERE category='$category'";
+                        }
+                        $result = mysqli_query($conn, $sql);
+                        foreach ($result as $row) {
+                            $name = $row["name"];
+                            $price = $row["price"]; ?>
+                            <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+                                <div class="card w-100 my-2 shadow-2-strong">
+                                    <img src="images/<?php echo $name?>.jpg" style="width: 245px; height: 160px; object-fit: cover;" class="card-img-top" />
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="d-flex flex-row">
+                                            <h5 class="mb-1 me-1">$
+                                                <?php echo $price; ?>
+                                            </h5>
+                                        </div>
+                                        <p class="card-text">
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+                                            <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+                                            <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i
+                                                    class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
+
                     </div>
 
                     <hr />
