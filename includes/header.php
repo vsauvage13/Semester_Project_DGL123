@@ -7,6 +7,9 @@
 </head>
 
 <body>
+<?php 
+require_once('database.php');
+?>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid px-4 px-lg-5">
