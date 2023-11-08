@@ -28,7 +28,7 @@
                         <div class="h-100">
                             <!-- Product image-->
                             <img class="card-img-top rounded-circle"
-                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                src="images/Echeveria.jpg" style="width: 245px; height: 160px; object-fit: cover;" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -49,7 +49,7 @@
                     <div class="h-100">
 
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Pothos.jpg"
                             alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
@@ -70,7 +70,7 @@
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Anthurium.jpg"
                             alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
@@ -91,7 +91,7 @@
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Monstera Thai Constellation.jpg"
                             alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
