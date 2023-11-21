@@ -87,82 +87,19 @@ require_once('includes/header.php');
                                         Size
                                     </button>
                                 </h2>
-                                <div class="accordion-collapse collapse show">
+
+                                <div class="accordion-collapse collapse show" aria-labelledby="headingOne">
                                     <div class="accordion-body">
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check1" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check1">XS</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check2" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check2">SM</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check3" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check3">LG</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check4" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check4">XXL</label>
+                                        <ul class="list-unstyled">
+                                            <li><a href="products.php" class="text-dark">All</a></li>
+                                            <li><a href="?size=2inches" class="text-dark">2"</a></li>
+                                            <li><a href="?size=4inches" class="text-dark">4"</a></li>
+                                            <li><a href="?size=6inches" class="text-dark">6"</a></li>
+                                            <li><a href="?size=1G" class="text-dark">1G</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" aria-expanded="false">
-                                        Ratings
-                                    </button>
-                                </h2>
-                                <div class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                        <!-- Default checkbox -->
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i>
-                                                <i class="fas fa-star text-warning"></i>
-                                            </label>
-                                        </div>
-                                        <!-- Default checkbox -->
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                        <!-- Default checkbox -->
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-secondary"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                        <!-- Default checkbox -->
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-secondary"></i><i
-                                                    class="fas fa-star text-secondary"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -172,10 +109,14 @@ require_once('includes/header.php');
                 <div class="col-lg-9">
                     <section class="d-sm-flex align-items-center border-bottom mb-4 pb-3">
                         <?php
-                        $sql = "SELECT COUNT(id) FROM inventory";
+                        $sql = "SELECT COUNT(id) FROM inventory WHERE 1";
                         if (isset($_GET['category'])) {
-                            $category = $_GET['category'];
-                            $sql .= " WHERE category='$category'";
+                            $category = mysqli_real_escape_string($conn, $_GET['category']);
+                            $sql .= " AND category = '$category'";
+                        }
+                        if (isset($_GET['size'])) {
+                            $size = mysqli_real_escape_string($conn, $_GET['size']);
+                            $sql .= " AND size = '$size'";
                         }
                         $result = mysqli_query($conn, $sql);
 
@@ -218,13 +159,15 @@ require_once('includes/header.php');
                             $category = $_GET['category'];
                             $sql .= " WHERE category='$category'";
                         }
+
                         $result = mysqli_query($conn, $sql);
                         foreach ($result as $row) {
                             $name = $row["name"];
                             $price = $row["price"]; ?>
                             <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
                                 <div class="card w-100 my-2 shadow-2-strong">
-                                    <img src="images/<?php echo $name?>.jpg" style="width: 245px; height: 160px; object-fit: cover;" class="card-img-top" />
+                                    <img src="images/<?php echo $name ?>.jpg"
+                                        style="width: 245px; height: 160px; object-fit: cover;" class="card-img-top" />
                                     <div class="card-body d-flex flex-column">
                                         <div class="d-flex flex-row">
                                             <h5 class="mb-1 me-1">$

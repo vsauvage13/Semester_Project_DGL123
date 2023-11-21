@@ -15,7 +15,8 @@
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Bring Nature Indoors</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Choose from succulents to flowering tropicals and everything in between!</p>
+                <p class="lead fw-normal text-white-50 mb-0">Choose from succulents to flowering tropicals and
+                    everything in between!</p>
             </div>
         </div>
     </header>
@@ -27,8 +28,8 @@
                     <div class="col mb-5">
                         <div class="h-100">
                             <!-- Product image-->
-                            <img class="card-img-top rounded-circle"
-                                src="images/Echeveria.jpg" style="width: 245px; height: 160px; object-fit: cover;" alt="..." />
+                            <img class="card-img-top rounded-circle" src="images/Echeveria.jpg"
+                                style="width: 245px; height: 160px; object-fit: cover;" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -49,8 +50,8 @@
                     <div class="h-100">
 
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Pothos.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Pothos.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -70,8 +71,8 @@
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Anthurium.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Anthurium.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -91,8 +92,8 @@
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Monstera Thai Constellation.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Monstera Thai Constellation.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -109,33 +110,6 @@
                         </div>
                     </div>
                 </div>
-<!-- TODO figuere out file path issues - directory thing -->
-<!-- <div class="container">
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div> -->
-
-
-
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
@@ -148,7 +122,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Easy</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Easy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +133,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Moderate</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Moderate</a>
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +144,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Advanced</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Advanced</a>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +166,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Small</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Small</a>
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +177,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Medium</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Medium</a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +188,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Large</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Large</a>
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +197,8 @@
                         </div>
 
                     </div>
-                </div>                <div class="container">
+                </div>
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="row">
@@ -229,7 +210,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Low Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Low
+                                                Light</a>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +221,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Indirect Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Indirect Light</a>
                                         </div>
                                     </div>
                                 </div>
@@ -249,7 +232,8 @@
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Direct Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Direct
+                                                Light</a>
                                         </div>
                                     </div>
                                 </div>
