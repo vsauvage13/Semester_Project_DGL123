@@ -15,21 +15,22 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 */
 
-// Production Environment
-error_reporting(0);
-ini_set("display_errors", 0);
+    // Production Environment
+    error_reporting(0);
+    ini_set("display_errors", 0);
     ?>
     <!-- Hero Banner-->
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Bring Nature Indoors</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Choose from succulents to flowering tropicals and everything in between!</p>
+                <p class="lead fw-normal text-white-50 mb-0">Choose from succulents to flowering tropicals and
+                    everything in between!</p>
             </div>
         </div>
     </header>
 
-    
+
     <!-- Round Circle Image Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -38,8 +39,8 @@ ini_set("display_errors", 0);
                     <div class="col mb-5">
                         <div class="h-100">
                             <!-- Product image-->
-                            <img class="card-img-top rounded-circle"
-                                src="images/Echeveria.jpg" style="width: 245px; height: 160px; object-fit: cover;" alt="..." />
+                            <img class="card-img-top rounded-circle" src="images/Echeveria.jpg"
+                                style="width: 245px; height: 160px; object-fit: cover;" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -60,8 +61,8 @@ ini_set("display_errors", 0);
                     <div class="h-100">
 
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Pothos.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Pothos.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -81,8 +82,8 @@ ini_set("display_errors", 0);
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Anthurium.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Anthurium.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -102,8 +103,8 @@ ini_set("display_errors", 0);
                 <div class="col mb-5">
                     <div class="h-100">
                         <!-- Product image-->
-                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;" src="images/Monstera Thai Constellation.jpg"
-                            alt="..." />
+                        <img class="card-img-top rounded-circle" style="width: 245px; height: 160px; object-fit: cover;"
+                            src="images/Monstera Thai Constellation.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -120,8 +121,8 @@ ini_set("display_errors", 0);
                         </div>
                     </div>
                 </div>
-<!-- TODO figuere out file path issues - directory thing -->
-<!-- <div class="container">
+                <!-- TODO figuere out file path issues - directory thing -->
+                <!-- <div class="container">
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -158,8 +159,17 @@ ini_set("display_errors", 0);
                                         <div class="card-body">
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
+                                            <?php
+
+                                            // Dump the Variables for debugging
+                                            $debugVar1 = "Debug Value 1";
+                                            $debugVar2 = rand(1, 100); // Random integer between 1 and 100
+                                            var_dump($debugVar1, $debugVar2);
+
+                                            ?>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Easy</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Easy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +179,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Moderate</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Moderate</a>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +190,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Advanced</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Advanced</a>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +212,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Small</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Small</a>
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +223,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Medium</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Medium</a>
                                         </div>
                                     </div>
                                 </div>
@@ -220,7 +234,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Large</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Large</a>
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +243,8 @@ ini_set("display_errors", 0);
                         </div>
 
                     </div>
-                </div>                <div class="container">
+                </div>
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="row">
@@ -240,7 +256,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Low Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Low
+                                                Light</a>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +267,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Indirect Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Indirect Light</a>
                                         </div>
                                     </div>
                                 </div>
@@ -260,7 +278,8 @@ ini_set("display_errors", 0);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Direct Light</a>
+                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop Direct
+                                                Light</a>
                                         </div>
                                     </div>
                                 </div>
