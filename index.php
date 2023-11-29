@@ -9,6 +9,15 @@
     <title>Shop Homepage - Start Bootstrap Template</title>
     <?php
     require_once('includes/header.php');
+    // Test Environment
+/*
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+*/
+
+// Production Environment
+error_reporting(0);
+ini_set("display_errors", 0);
     ?>
     <!-- Hero Banner-->
     <header class="bg-dark py-5">
@@ -19,6 +28,8 @@
             </div>
         </div>
     </header>
+
+    
     <!-- Round Circle Image Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
