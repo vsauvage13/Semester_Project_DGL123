@@ -58,6 +58,15 @@ ini_set("display_errors", 1);
                                     }
 
                                     foo();
+
+
+                                    // Manual Breakpoint Section 
+                                    function manualBreakpoint()
+                                    {
+                                        die("Manual Breakpoint");
+                                    }
+
+                                    manualBreakpoint();
                                     ?>
                                 </div>
                             </div>
