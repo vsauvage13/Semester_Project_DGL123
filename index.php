@@ -46,6 +46,19 @@ ini_set("display_errors", 1);
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Succulents & Cacti</h5>
+                                    <?php
+                                    function foo()
+                                    {
+                                        bar();
+                                    }
+
+                                    function bar()
+                                    {
+                                        debug_print_backtrace();
+                                    }
+
+                                    foo();
+                                    ?>
                                 </div>
                             </div>
                             <!-- Product actions-->
