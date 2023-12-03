@@ -46,28 +46,6 @@ ini_set("display_errors", 1);
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Succulents & Cacti</h5>
-                                    <?php
-                                    function foo()
-                                    {
-                                        bar();
-                                    }
-
-                                    function bar()
-                                    {
-                                        debug_print_backtrace();
-                                    }
-
-                                    foo();
-
-
-                                    // Manual Breakpoint Section 
-                                    function manualBreakpoint()
-                                    {
-                                        die("Manual Breakpoint");
-                                    }
-
-                                    manualBreakpoint();
-                                    ?>
                                 </div>
                             </div>
                             <!-- Product actions-->
