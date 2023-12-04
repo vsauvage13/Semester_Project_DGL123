@@ -99,64 +99,7 @@ require_once('includes/header.php');
                                     </div>
                                 </div>
                             </div>
-                            <!--
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button text-dark bg-light" type="button"
-                                        data-mdb-toggle="collapse" aria-expanded="false">
-                                        Ratings
-                                    </button>
-                                </h2>
-                                <div class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                        Default checkbox
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i>
-                                                <i class="fas fa-star text-warning"></i>
-                                            </label>
-                                        </div>
-                                        Default checkbox 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                        Default checkbox
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-secondary"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                     Default checkbox 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" checked />
-                                            <label class="form-check-label">
-                                                <i class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-warning"></i><i
-                                                    class="fas fa-star text-secondary"></i><i
-                                                    class="fas fa-star text-secondary"></i>
-                                                <i class="fas fa-star text-secondary"></i>
-                                            </label>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            -->
+                           
                         </div>
                     </div>
                 </div>
@@ -264,33 +207,11 @@ require_once('includes/header.php');
                     </div>
 
                     <hr />
-
-                    <!-- Pagination -->
-                    <!-- <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> -->
-                    <!-- Pagination -->
+                  
                 </div>
             </div>
         </div>
     </section>
-    <!-- sidebar + content -->
 
 
 

@@ -30,8 +30,6 @@ require_once('includes/header.php');
                         $sql = "SELECT * FROM inventory WHERE name='$name'";
                         $result = mysqli_query($conn, $sql);
                         while ($row = $result->fetch_assoc()) {
-                          // Print or use the data here
-                          // echo " - Name: " . $row["name"] . "<br>";
                           $total += $row['price'] * $quantity;
                           $total_quantity += $quantity;
                           ?> <!-- START -->
