@@ -7,9 +7,38 @@
 </head>
 
 <body>
-<?php 
-require_once('database.php');
-?>
+    <?php
+
+    require_once('database.php');
+    session_start();
+    if (isset($_POST['confirm_order'])) {
+        session_destroy();
+    }
+
+
+
+    if (isset($_SESSION['cart_item'])) {
+        $cart_item = $_SESSION['cart_item'];
+        $cart_quantity = $_SESSION['cart_quantity'];
+    } else {
+        $cart_item = [];
+        $cart_quantity = [];
+    }
+
+
+    if (isset($_POST['name'])) {
+        $name = $_POST['name'];
+        if (array_search($name, $cart_item)) {
+            $cart_quantity[array_search($name, $cart_item)] += $_POST['quantity'];
+        } else {
+            array_push($cart_item, $name);
+            array_push($cart_quantity, $_POST['quantity']);
+        }
+        $_SESSION["cart_item"] = $cart_item;
+        $_SESSION["cart_quantity"] = $cart_quantity;
+
+    }
+    ?>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid px-4 px-lg-5">
@@ -47,11 +76,9 @@ require_once('database.php');
                     <li class="nav-item"><a class="nav-link" href="login.php">Admin</a></li>
                 </ul>
                 <a href="cart.php" class="btn btn-outline-dark">
-    <i class="bi-cart-fill me-1"></i>
-    Cart
-    <!-- TODO Below make the number update to the cart number using PHP -->
-    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-</a>
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                </a>
 
             </div>
         </div>
