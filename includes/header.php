@@ -8,9 +8,9 @@
 
 <body>
     <?php
-
-    require_once('database.php');
     session_start();
+    require_once('database.php');
+
     if (isset($_POST['confirm_order'])) {
         session_destroy();
     }
