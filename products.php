@@ -71,7 +71,7 @@ require_once('includes/header.php');
                                                 </p>
                                                 <div class="form-outline">
                                                     <input type="number" class="form-control" />
-                                                    <label class="form-label">$1,0000</label>
+                                                    <label class="form-label">$1,000</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,25 +89,17 @@ require_once('includes/header.php');
                                 </h2>
                                 <div class="accordion-collapse collapse show">
                                     <div class="accordion-body">
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check1" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check1">XS</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check2" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check2">SM</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check3" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check3">LG</label>
-                                        <input type="checkbox" class="btn-check border justify-content-center"
-                                            id="btn-check4" checked autocomplete="off" />
-                                        <label class="btn btn-white mb-1 px-1" style="width: 60px;"
-                                            for="btn-check4">XXL</label>
+                                        <ul class="list-unstyled">
+                                            <li><a href="products.php" class="text-dark">All</a></li>
+                                            <li><a href="?size=2inches" class="text-dark">2"</a></li>
+                                            <li><a href="?size=4inches" class="text-dark">4"</a></li>
+                                            <li><a href="?size=6inches" class="text-dark">6"</a></li>
+                                            <li><a href="?size=1G" class="text-dark">1G</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+                            <!--
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button text-dark bg-light" type="button"
@@ -117,7 +109,7 @@ require_once('includes/header.php');
                                 </h2>
                                 <div class="accordion-collapse collapse show">
                                     <div class="accordion-body">
-                                        <!-- Default checkbox -->
+                                        Default checkbox
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" checked />
                                             <label class="form-check-label">
@@ -128,7 +120,7 @@ require_once('includes/header.php');
                                                 <i class="fas fa-star text-warning"></i>
                                             </label>
                                         </div>
-                                        <!-- Default checkbox -->
+                                        Default checkbox 
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" checked />
                                             <label class="form-check-label">
@@ -139,7 +131,7 @@ require_once('includes/header.php');
                                                 <i class="fas fa-star text-secondary"></i>
                                             </label>
                                         </div>
-                                        <!-- Default checkbox -->
+                                        Default checkbox
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" checked />
                                             <label class="form-check-label">
@@ -150,7 +142,7 @@ require_once('includes/header.php');
                                                 <i class="fas fa-star text-secondary"></i>
                                             </label>
                                         </div>
-                                        <!-- Default checkbox -->
+                                     Default checkbox 
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" checked />
                                             <label class="form-check-label">
@@ -161,9 +153,10 @@ require_once('includes/header.php');
                                                 <i class="fas fa-star text-secondary"></i>
                                             </label>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
                             </div>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -176,6 +169,9 @@ require_once('includes/header.php');
                         if (isset($_GET['category'])) {
                             $category = $_GET['category'];
                             $sql .= " WHERE category='$category'";
+                        } elseif (isset($_GET['size'])) {
+                            $category = $_GET['size'];
+                            $sql .= " WHERE size='$category'";
                         }
                         $result = mysqli_query($conn, $sql);
 
@@ -197,7 +193,6 @@ require_once('includes/header.php');
                                 <option value="0">Best match</option>
                                 <option value="1">Recommended</option>
                                 <option value="2">High rated</option>
-                                <option value="3">Randomly</option>
                             </select>
                             <div class="btn-group shadow-0 border">
                                 <a href="#" class="btn btn-light" title="List view">
@@ -217,6 +212,9 @@ require_once('includes/header.php');
                         if (isset($_GET['category'])) {
                             $category = $_GET['category'];
                             $sql .= " WHERE category='$category'";
+                        } elseif (isset($_GET['size'])) {
+                            $category = $_GET['size'];
+                            $sql .= " WHERE size='$category'";
                         }
                         $result = mysqli_query($conn, $sql);
                         foreach ($result as $row) {
@@ -224,7 +222,8 @@ require_once('includes/header.php');
                             $price = $row["price"]; ?>
                             <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
                                 <div class="card w-100 my-2 shadow-2-strong">
-                                    <img src="images/<?php echo $name?>.jpg" style="width: 245px; height: 160px; object-fit: cover;" class="card-img-top" />
+                                    <img src="images/<?php echo $name ?>.jpg"
+                                        style="width: 245px; height: 160px; object-fit: cover;" class="card-img-top" />
                                     <div class="card-body d-flex flex-column">
                                         <div class="d-flex flex-row">
                                             <h5 class="mb-1 me-1">$
@@ -235,9 +234,27 @@ require_once('includes/header.php');
                                             <?php echo $name; ?>
                                         </p>
                                         <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                            <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                            <a href="#!" class="btn btn-light border icon-hover px-2 pt-2"><i
-                                                    class="fas fa-heart fa-lg text-secondary px-1"></i></a>
+                                            <form action="products.php" method="post">
+
+                                                <button class="btn btn-primary shadow-0 me-1">Add to cart</button>
+                                                <input style="display:none" type="text" id="name" name="name" value="<?php echo $name; ?>" />
+                                                <div>
+                                                    <!--  class="col-md-3 col-lg-3 col-xl-2" -->
+                                                    <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <!-- TODO Reference database for cart items that include number of items and item names -->
+                                                    <input id="quantity" min="0" name="quantity" value="1" type="number"
+                                                        class="form-control form-control-sm" />
+
+                                                    <button class="btn btn-link px-2"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+
                                         </div>
                                     </div>
                                 </div>
@@ -249,7 +266,7 @@ require_once('includes/header.php');
                     <hr />
 
                     <!-- Pagination -->
-                    <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+                    <!-- <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
                         <ul class="pagination">
                             <li class="page-item disabled">
                                 <a class="page-link" href="#" aria-label="Previous">
@@ -267,7 +284,7 @@ require_once('includes/header.php');
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
                     <!-- Pagination -->
                 </div>
             </div>
