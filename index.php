@@ -45,14 +45,14 @@ ini_set("display_errors", 1);
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Succulents & Cacti</h5>
+                                    <h5 class="fw-bolder">Succulents</h5>
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <!-- TODO add link to product page with php filter here -->
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto"
-                                        href="products.php">View More</a></div>
+                                href="products.php?category=succulent">View More</a></div>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ ini_set("display_errors", 1);
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <!-- TODO add link to product page with php filter here -->
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php?category=climbing">View
                                     More</a>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ ini_set("display_errors", 1);
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <!-- TODO add link to product page with php filter here -->
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php?category=flowering">View
                                     More</a>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ ini_set("display_errors", 1);
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <!-- TODO add link to product page with php filter here -->
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php">View
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products.php?category=collectors">View
                                     More</a>
                             </div>
                         </div>
@@ -161,12 +161,12 @@ ini_set("display_errors", 1);
                                             <h5 class="card-title">Card 1</h5>
                                             <?php
 
-                                            // Dump the Variables for debugging
-                                            $debugVar1 = "Debug Value 1";
-                                            $debugVar2 = rand(1, 100); // Random integer between 1 and 100
-                                            var_dump($debugVar1, $debugVar2);
+                                            // // Dump the Variables for debugging
+                                            // $debugVar1 = "Debug Value 1";
+                                            // $debugVar2 = rand(1, 100); // Random integer between 1 and 100
+                                            // var_dump($debugVar1, $debugVar2);
 
-                                            ?>
+                                            // ?>
                                             <!-- TODO add link to product page with php filter here -->
                                             <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
                                                 Easy</a>
@@ -212,7 +212,7 @@ ini_set("display_errors", 1);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 1</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                            <a href="products.php?size=2inches" class="btn btn-outline-dark mt-auto stretched-link">Shop
                                                 Small</a>
                                         </div>
                                     </div>
@@ -223,8 +223,8 @@ ini_set("display_errors", 1);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 2</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
-                                                Medium</a>
+                                            <a href="products.php?size=6inches" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                                Large</a>
                                         </div>
                                     </div>
                                 </div>
@@ -234,8 +234,8 @@ ini_set("display_errors", 1);
                                             <!-- TODO replace Card title with placeholder icon perhaps? or images? -->
                                             <h5 class="card-title">Card 3</h5>
                                             <!-- TODO add link to product page with php filter here -->
-                                            <a href="#" class="btn btn-outline-dark mt-auto stretched-link">Shop
-                                                Large</a>
+                                            <a href="products.php?size=1G" class="btn btn-outline-dark mt-auto stretched-link">Shop
+                                               X-Large</a>
                                         </div>
                                     </div>
                                 </div>
